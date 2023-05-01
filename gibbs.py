@@ -51,7 +51,9 @@ data_table = {
     'C2N2':  (309.07, 241.57),    ## Cyanogen
     'HCN':   (135.14, 201.82),    ## Hydrogen Cyanide
     'CH3N':  (-47.3, 150.2),      ## Methylamine
+    'HCNO':  (-101.67, 238.22)    ## Isocyanic acid
     'C2H5NO2': (-527.5, 103.5),   ## Glycine (Ammino acid)
+    'CO(NH2)2': (-333.11, 104.26),  ## Urea
 
     'Ne':    (0, 146.33),
 
@@ -60,6 +62,9 @@ data_table = {
     'Mg(OH)2': (-924.66, 63.18),   ## Brucite
     'MgCO3':   (-1111.69, 65.84),
     'Mg3N2':   (-461.08, 87.86),
+    'MgS':     (-345.72, 50.30),   ## Niningerite
+    'MgSO4':   (-1261.79, 91.46),  ## Epsomite (if hydrated)
+    
 
     'Si':      (0, 18.82),
     'SiO2':    (-910.7, 41.46),    ## Quartz
@@ -67,6 +72,9 @@ data_table = {
     'Fe':      (0, 27.31),
     'FeO':     (-272.04, 60.75),   ## Wustite
     'Fe2O3':   (-1120.89, 145.2),  ## Magnetite
+    'FeS':     (-101.67, 50.50),
+    'FeS2':    (-167.36, 62.38),   ## Pyrite
+    'FeSO4':   (-928.85, 120.93),  ## Melanterite (if hydrated)
     
     'S':       (0, 32.054),
     'H2S':     (-20.6, 205.81),
@@ -74,30 +82,24 @@ data_table = {
     'SO3':     (-395.77, 256.77),
     'SO':      (5.01, 221.94),
     'S2O':     (-56.48, 266.89),
-    'H2SO4':   (-814, 157),
+    'H2SO4':   (-814, 157),        ## Sulfates needed for life
+    'COS':     (-138.41, 231.57),  ## Carbonyl sulfide
     
+    'P':       (-17.46, 41.09),    ## Black phosphorus.  NOTE:  The most stable state for Phosphorus is not the zero-reference state!
+    'P2':      (144.0, 218.12),    ## Gas phase at high temperatures
+    'P4':      (58.9, 280.01),     ## White phosphorus in gas phase
+    'PH3':     (5.47, 210.24),     ## Phosphine
+    'PO':      (-23.55, 222.78),
+    'PO2':     (-314.52, 253.69),
+    'P2O5':    (-2904.09/2, 403.96/2),  ## Note, actually a dimer (P4O10), so values are halved
+    'H3PO4':   (-1271.66, 150.77)  ## Phosphoric Acid
+
+    #### NOTE:  The connection of H3PO4 to P2O5 is something like this:
+    ##
+    ## P2O5 + 3 H2O <-> H2P2O6 + 2 H2O <-> H4P2O7 + H2O <-> 2 H3PO4
+    ##
+    #### But there isn't any data for the polymeric forms
     
-
-    'P':     (0, 41.09),
-    'PH3':   (5.4, 210),
-    'H3PO4': (-1279.0, 110.5),  ## Tri-phosphates needed for life
-    
-    'O2':    (0, 205.03),
-    'H2O':   (-285.830, 69.91),
-    'H2O2':  (-187.78, 109.6),
-
-    'S':     (0, 31.8),
-    'H2S':   (-20.63, 205.68),
-    'SO2':   (-296.83, 248.11),
-    'SO3':   (-395.72, 256.65),
-    'H2SO4': (-813.99, 156.90),
-
-    'C6H12O6':  (-1271, 209.2),   ## Glucose  (Standin for sugar)
-    'C2H5NO2':  (-528.61, 103.51),  ## Glycine  (Amino acid, standin for protein)
-
-    'Mg':    (0, 32.68),
-    'MgO':   (-601.7, 26.94),
-
     'Ti':    (0, 30.63),
     'TiO2':  (-944.7, 50.33),
 
