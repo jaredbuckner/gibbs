@@ -84,6 +84,24 @@ data_table = {
     'S2O':     (-56.48, 266.89),
     'H2SO4':   (-814, 157),        ## Sulfates needed for life
     'COS':     (-138.41, 231.57),  ## Carbonyl sulfide
+
+    'Ar':      (0, 154.85),
+
+    'Al':      (0, 28.27),
+    'AlO':     (66.94, 218.33),
+    'AlO2':    (-86.18, 251.83),
+    'Al2O':    (-145.19, 252.24),
+    'Al2O2':   (-394.55, 280.90),
+    'Al2O3':   (-1675.6, 50.92),   ## Corundum
+    'AlN':     (-317.98, 20.14),
+    
+    'Ca':      (0, 41.59),
+    'CaO':     (-634.92, 38.1),    ## Quicklime
+    'Ca(OH)2': (-986.09, 83.36),   ## Slaked Lime
+    'CaCO3':   (-1207, 93),        ## Calcite
+    'CaSO4':   (-1433, 107),       ## Gypsum
+    
+    
     
     'P':       (-17.46, 41.09),    ## Black phosphorus.  NOTE:  The most stable state for Phosphorus is not the zero-reference state!
     'P2':      (144.0, 218.12),    ## Gas phase at high temperatures
